@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf8">
+    <title>Tem Vaga Aí?</title>
+    <link rel="icon" href="Imagens/Logos/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Stylesheet/style.css" id="pagestyle">
+</head>
+
+<body>
+
+    <!--Criação dos avisos no topo da página (animação css com timer e mouse over com cor)-->
+    <div class="pagina">
+        <div class="avisos">
+            <ul>
+                <li align="center"><a id="textopadrao" href="https://covid.saude.gov.br/" target="_blank">Confira as
+                        últimas informações sobre COVID-19</a></li>
+                <li align="center"><a id="textopadrao" href="Paginas/Contato.html">Clique aqui para ver os criadores do
+                        Tem Vaga Aí</a></li>
+                <li align="center"><a id="textopadrao" href="https://covid.saude.gov.br/" target="_blank">Confira as
+                        últimas informações sobre COVID-19</a></li>
+                <li align="center"><a id="textopadrao" href="Paginas/Contato.html">Clique aqui para ver os criadores do
+                        Tem Vaga Aí</a></li>
+            </ul>
+        </div>
+
+        <!--Criação do menu da página (animação css com timer no gif, elements dropdown e mouse over com cor)-->
+        <div class="menu">
+            <ul>
+                <li><a class="logo"><img src="Imagens/Logos/logogif2.gif" width="120px" height="65px" id="myfoto"></a>
+                <li><a class="active" href="Home.html"><b>HOME</b></a>
+                
+                <!--Tela de resultado de pesquisa com vários resultados por tela (dropdown)--> 
+                <li class="dropdown"><a class="dropbtn"><b>Hospedagem</b></a>
+                    <div class="dropdown-content">
+                        <a href="Paginas/Hospedagem_casal.html"><b>Camas de casal</b></a>
+                        <a href="Paginas/Hospedagem_solteiro.html"><b>Camas de solteiro</b></a>
+                        <a href="Paginas/Hospedagem_sofa_cama.html"><b>Sofás-cama</b></a>
+                        <a href="Paginas/Hospedagem_redes.html"><b>Redes</b></a>
+                    </div>
+
+                <li><a href="Paginas/Contato.html"><b>Contato</b></a>
+
+                <!--Página com elementos de entrada de dados Dropbox, radio button, texto, check box-->
+                <li id="direita"><a href="PHP/cadastro.php">Cadastro</a></li>
+
+                <li id="direita"><a href="Stylesheet/style2.css" onclick="changeStyle('Stylesheet/style2.css');return false;">Trocar tema</a></li>
+            </ul>
+        </div>
+
+        <!--Criação do conteúdo de Banner (radio button, animação css)-->
+        <div class="slidershow">
+            <div class="slides">
+                <input type="radio" name="r" id="r1" checked>
+                <input type="radio" name="r" id="r2">
+                <input type="radio" name="r" id="r3">
+                <input type="radio" name="r" id="r4">
+                <input type="radio" name="r" id="r5">
+
+                <div class="slide s1">
+                    <a><img src="Imagens/Logos/logo_wide.jpg" alt=""></a>
+                </div>
+                <div class="slide">
+                    <a><img src="Imagens/rede/rede_wide.png" alt=""></a>
+                </div>
+                <div class="slide">
+                    <a><img src="Imagens/sofa_cama/sofa_cama_wide.png" alt=""></a>
+                </div>
+                <div class="slide">
+                    <a><img src="Imagens/solteiro/solteiro_wide.png" alt=""></a>
+                </div>
+                <div class="slide">
+                    <a><img src="Imagens/casal/casal_wide.jpg" alt=""></a>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <label for="r1" class="bar"></label>
+                <label for="r2" class="bar"></label>
+                <label for="r3" class="bar"></label>
+                <label for="r4" class="bar"></label>
+                <label for="r5" class="bar"></label>
+            </div>
+        </div>
+
+        <div class="pesquisar">
+            <div style="text-align: center; padding-top: 50px; padding-bottom: 100px;">
+                <a style="font-size: 40px;"><b>Pesquisar</b></a>
+                <form class="formpesquisa" action="PHP/pesquisar.php" method="POST">
+                    <input style="height: 40px; width: 350px; margin: auto;" type="text" id="pesquisa" name="pesquisa" placeholder="Pesquise aqui(ex: cama, rede, sofá)">
+                    <input style="height: 40px; width: 100px; background: #FF8C00; color: #fff; border: 1px solid #fff;text-shadow: 0 1px 1px #333; font-weight: bold;" name="search" type="submit" value="Pesquisar">
+                </form>
+            </div>
+        </div>
+
+        <!--Conteúdo de texto com imagem e efeito mouse over (tamanho e alteração do conteúdo)-->
+        <div class="tituloanfitrioes">
+            <a><b>Anfitriões</b></a>
+            <hr width="95%" font color="gray" noshade>
+        </div>
+
+        <div class="anfitrioes">
+
+            <div class="dropdowna">
+                <img class="anfitriaoimg" src="Imagens/avatar/avatar1.jpg" alt="Avatar 1">
+                <div class="dropdowna-content">
+                    <img src="Imagens/avatar/avatar1.jpg" alt="Avatar 1" width="400" height="400">
+                    <div class="desc"><b>Rafael Varão</b></div>
+                </div>
+            </div>
+
+            <div class="dropdownb">
+                <img class="anfitriaoimg" src="Imagens/avatar/avatar2.jpg" alt="Avatar 2">
+                <div class="dropdownb-content">
+                    <img src="Imagens/avatar/avatar2.jpg" alt="Avatar 2" width="400" height="400">
+                    <div class="desc"><b>Pablo Ramírez</b></div>
+                </div>
+            </div>
+
+            <div class="dropdownc">
+                <img class="anfitriaoimg" src="Imagens/avatar/avatar3.jpg" alt="Avatar 3">
+                <div class="dropdownc-content">
+                    <img src="Imagens/avatar/avatar3.jpg" alt="Avatar 3" width="400" height="400">
+                    <div class="desc"><b>Ester Portela</b></div>
+                </div>
+            </div>
+        </div>
+
+        <!--Conteúdo de texto puro com alteração de fonte-->
+        <div class="texto">
+            <hr width="100%" font color="gray" noshade>
+            <p>
+            <h3>Lorem Ipsum</h3>
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet finibus enim, sed eleifend
+                libero. Phasellus quis nibh ut erat dapibus facilisis a vitae augue. Vestibulum at blandit mi. Nam metus
+                ante, gravida at tincidunt eget, auctor et nisi. Nam in neque et metus euismod iaculis. Cras sed magna
+                tincidunt ex dignissim efficitur id egestas dui. Aliquam erat volutpat. Aenean ac lacus urna. Nam
+                ultricies eget leo sit amet interdum. Maecenas tristique semper sapien, id pulvinar tellus. Duis ut
+                commodo magna. Curabitur dictum pharetra porttitor. Sed sollicitudin consequat ante eget ullamcorper.
+                Nam a feugiat lorem.</p>
+            <p>Nunc elementum pharetra consectetur. Sed sapien diam, feugiat nec elit vitae, sagittis facilisis arcu.
+                Curabitur a feugiat augue. In dapibus tincidunt sodales. In tincidunt gravida lorem ac ullamcorper.
+                Integer orci sapien, semper at ex eget, ultricies convallis lectus. Ut dapibus tellus vitae arcu
+                vestibulum, convallis elementum erat hendrerit.</p>
+            <p>Phasellus semper, odio in dapibus ornare, tortor lectus sodales tortor, eget eleifend turpis ex quis mi.
+                Sed ut congue arcu. Aenean a urna orci. Nulla volutpat tempor felis, in euismod urna hendrerit vitae. In
+                quis facilisis tellus, in fringilla felis. Aenean mattis lorem vitae semper cursus. Praesent nibh odio,
+                lobortis non consequat quis, laoreet ut arcu. Maecenas ornare urna arcu, eu dictum erat tincidunt in.
+                Etiam cursus tellus at urna lobortis iaculis in ut magna. Aenean varius nisl quis risus accumsan
+                pretium. Praesent sed ante urna. Curabitur condimentum metus ut diam aliquam ornare. Ut sollicitudin
+                risus placerat ultrices auctor.</p>
+            <p>Mauris sed arcu sed odio tempor consequat. Suspendisse in pharetra libero, non vulputate nunc. Aliquam
+                facilisis imperdiet nunc, vel faucibus eros aliquet rutrum. Proin efficitur aliquet leo quis pharetra.
+                Morbi et augue rhoncus, volutpat quam non, egestas erat. Aenean dignissim, augue et consequat imperdiet,
+                ex nulla luctus diam, et luctus est erat in orci. Aliquam sit amet ex pharetra, ullamcorper mauris sit
+                amet, tempor lacus. Donec vel commodo justo. Proin ac iaculis sapien. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Aliquam hendrerit, quam in vehicula elementum, lacus sem consectetur lacus,
+                porta tempus velit lorem vel nibh. Phasellus vel libero ut nulla iaculis fringilla. Nam eget rutrum
+                dolor. Vestibulum vitae hendrerit orci. Etiam volutpat tellus at enim imperdiet, eget vehicula quam
+                consectetur. Duis blandit dui sit amet enim interdum, sed varius mi pretium.</p>
+            <p>Nulla pharetra sed arcu ultrices lobortis. Duis finibus ac odio at gravida. Praesent varius a quam ut
+                eleifend. Pellentesque non venenatis nunc. Sed venenatis faucibus leo vel consequat. Sed quam felis,
+                laoreet sit amet ullamcorper a, viverra sit amet tellus. Aenean at sem justo. Orci varius natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer congue, odio sed sodales
+                eleifend, lectus diam feugiat purus, a interdum mauris orci molestie lacus. Donec a venenatis leo. Morbi
+                eu fermentum dolor. Pellentesque a eros ac augue mattis facilisis. Cras congue vehicula ipsum, et
+                fringilla sapien bibendum sit amet. Donec vitae tincidunt est.</p>
+        </div>
+
+        <!--Rodapé da página (mouse over de cor)-->
+        <div class="rodape">
+            <p style="font-size: 25px;"><b>Sobre</b></p>
+            <p><a href="Paginas/Contato.html">Desenvolvedores</a></p>
+            <hr width="95%" font color="gray" noshade>
+        </div>
+
+        <div class="hej">
+            <a><b>© 2020 H & J, All rights reserved</b></a>
+        </div>
+
+    </div>
+
+</body>
+
+<script type="text/javascript">
+    function changeStyle(url) {
+        document.getElementById('pagestyle').href = url;
+    }
+</script>
+
+</html>

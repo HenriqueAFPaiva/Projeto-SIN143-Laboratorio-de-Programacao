@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf8">
+    <title>Tem Vaga Aí?</title>
+    <link rel="icon" href="../Imagens/Logos/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Stylesheet/style.css" id="pagestyle">
+</head>
+
+<script type="text/javascript">
+    function changeStyle(url) {
+        document.getElementById('pagestyle').href = url;
+    }
+</script>
+
+<body>
+    <div class="pagina">
+        <div class="avisos">
+            <ul>
+                <li align="center"><a href="https://covid.saude.gov.br/" target="_blank">Confira as últimas informações
+                        sobre COVID-19</a></li>
+                <li align="center"><a href="Contato.html">Clique aqui para ver os criadores do Tem Vaga Aí</a>
+                </li>
+                <li align="center"><a href="https://covid.saude.gov.br/" target="_blank">Confira as últimas informações
+                        sobre COVID-19</a></li>
+                <li align="center"><a href="Contato.html">Clique aqui para ver os criadores do Tem Vaga Aí</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="menu">
+
+            <ul>
+                <li><a class="logo"><img src="../Imagens/Logos/logogif2.gif" width="120px" height="65px"
+                            id="myfoto"></a>
+                <li><a href="../Home.html"><b>HOME</b></a>
+
+                <li class="dropdown"><a class="dropbtn"><b>Hospedagem</b></a>
+                    <div class="dropdown-content">
+                        <a href="Hospedagem_casal.html"><b>Camas de casal</b></a>
+                        <a href="Hospedagem_solteiro.html"><b>Camas de solteiro</b></a>
+                        <a href="Hospedagem_sofa_cama.html"><b>Sofás-cama</b></a>
+                        <a href="Hospedagem_redes.html"><b>Redes</b></a>
+                    </div>
+
+                <li><a href="Contato.html" class="active"><b>Contato</b></a>
+
+                <li id="direita"><a href="../PHP/cadastro.php">Cadastro</a></li>
+
+                <li id="direita"><a href="../Stylesheet/style2.css" onclick="changeStyle('../Stylesheet/style2.css');return false;">Trocar tema</a></li>
+            </ul>
+
+        </div>
+
+        <div class="devs">
+            <hr width="95%" font color="gray" noshade>
+            <p>
+            <h2>Desenvolvedores</h2>
+            </p>
+            <hr width="95%" font color="gray" noshade>
+            <div class="caixa1">
+                <div>
+                    <img id="fotos" src="../Imagens/Devs/zezim.jpg">
+                </div>
+                <div class="textodev">
+                    <p>
+                    <h3>José Eduardo</h3>
+                    </p>
+                    <p><h3>Matrícula: 5964</h3><h3>Período: Noturno</h3><br></p>
+                    <p id="centralizar"><a href="mailto:josedumoura@gmail.com">Entre em contato</a></p>
+                </div>
+            </div>
+            <div class="caixa2">
+                <div>
+                    <img id="fotos" src="../Imagens/Devs/henrique.jpg">
+                </div>
+                <div class="textodev">
+                    <p>
+                    <h3>Henrique Alves</h3>
+                    </p>
+                    <p><h3>Matrícula: 5968</h3><h3>Período: Noturno</h3><br></p>
+                    <p id="centralizar"><a href="mailto:henriqueafp006@gmail.com">Entre em contato</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contato">
+            <hr width="95%" font color="gray" noshade>
+            <p>
+            <h2>Entre em contato com a gente</h2>
+            </p>
+            <hr width="95%" font color="gray" noshade>
+            <div id="area">
+                <form id="formulario" autocomplete="off" action="mailto:henriqueafp006@gmail.com">
+                    <fieldset>
+                        <legend>Formulário</legend>
+                        <label>Nome:</label><input class="campo_nome" type="text"><br>
+                        <label>Email:</label><input class="campo_email" type="text"><br>
+                        <label>Mensagem:</label><br><textarea class="msg" cols="41" rows="8"></textarea><br>
+                        <input class="btn_submit" type="submit" value="Enviar">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+        <div class="rodape">
+            <p style="font-size: 25px;"><b>Sobre</b></p>
+            <p><a href="Contato.html">Desenvolvedores</a></p>
+            <hr width="95%" font color="gray" noshade>
+        </div>
+
+        <div class="hej">
+            <a><b>© 2020 H & J, All rights reserved</b></a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
