@@ -1,4 +1,6 @@
-# Projeto-SIN143
+# Projeto SIN143 - Laboratório de Programação - UFV CRP
+
+
 
 ## Observações: 
  - O botão de alterar tema não funciona para voltar para o tema antigo e ele não salva pela sessão, basta recarregar a página que o tema irá voltar;
